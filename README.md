@@ -10,6 +10,10 @@ then other dependencies:
 ```
 pip install -r requirements.txt --index-url=https://packages.idmod.org/api/pypi/pypi-production/simple
 ```
+and make sure that PYTHONPATH is set to include `scenarios/` e.g.,:
+```
+mamba env config vars set PYTHONPATH=".:./scenarios"
+```
 
 ## References
 - Data from: https://github.com/InstituteforDiseaseModeling/EMOD-Generic-Scripts/tree/main/model_measles_nga01/Assets
