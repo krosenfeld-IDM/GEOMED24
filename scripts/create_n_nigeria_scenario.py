@@ -41,7 +41,6 @@ if __name__ == "__main__":
     cnt = 0
     lat = []
     lon = []
-    id = []
     # loop through the subnational components in the lgas dict 
     # (includes nationa, state, and lga)
     lga_id = 0
@@ -54,7 +53,6 @@ if __name__ == "__main__":
                 data.places[k] = sc.dictobj({'population': v[0][0], 'latitude': v[1][1], 'longitude': v[1][0]})
                 lon.append(v[1][0])
                 lat.append(v[1][1])
-                id.append(lga_id)
                 cnt += 1
     print(f"Total number of LGAs: {cnt}")
 
