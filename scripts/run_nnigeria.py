@@ -51,8 +51,8 @@ if __name__ == "__main__":
     from idmlaser.models.numpynumba import NumbaSpatialSEIR  # noqa: I001, E402, RUF100
     model = NumbaSpatialSEIR(params)
 
-    # GPU based implementation with Taichi
-    # from idmlaser.models import TaichiSpatialSEIR  # noqa: I001, E402, RUF100
+    # # GPU based implementation with Taichi
+    # from idmlaser.models.taichi import TaichiSpatialSEIR  # noqa: I001, E402, RUF100
     # model = TaichiSpatialSEIR(params)
 
     model.initialize(max_capacity, demographics, initial, network)
